@@ -1,0 +1,264 @@
+
+%
+% This document has designed to be read through as a PDF first.
+% Click on the ``Typeset'' button in the toolbar to generate the PDF
+% if it is not already visible.
+%
+
+%%% PREAMBLE %%%
+% You probably want to skip to \begin{document} if this is your first time.
+
+\documentclass[article,oneside]{memoir}
+% This command goes at the beginning of every document
+% [oneside,article] are two of many options that can be chosen
+%   oneside makes each page have the same layout, for printing on only one side 
+%     of the paper (change it to twoside to see the difference)
+%   article means we're writing a short document only and won't be using special 
+%     chapter headings
+%   a4paper changes the page dimensions for A4 sized paper 
+
+%%% PACKAGES %%%
+
+\usepackage{graphicx} % Add graphics capabilities
+\usepackage{booktabs} % ``Proper'' table layout
+\usepackage{amsmath}  % Better maths support
+\usepackage[colorlinks=true,linkcolor=red]{hyperref} % Hyperlink capabilities
+
+\usepackage{memhfixc} % This package is required to resolve incompatibilities
+                      % with the memoir class & the hyperref package
+\usepackage[T1]{fontenc}
+
+                      
+%%\usepackage{pdfsync}
+%%\usepackage{/Library/texmf/tex/latex/pdfsync}
+% This package is used to tell TeXShop where things are in the PDF file.
+% Command-click at any spot in the PDF and it will jump to the corresponding
+% location in the source file.
+
+%%% COMMANDS %%%
+
+% These are two examples of how you can define your own commands.
+% These two are used to save on typing.
+\newcommand{\pkg}[1]{\textsf{#1}}
+\newcommand{\lshort}{\href{http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf}{The Not So Short Introduction to \LaTeX{}}}
+
+
+% Define the title, author and date of the document.
+% If the date is undefined, the current date is substituted.
+\title {Synthetic Aperture Radar Simplified}
+\author{Sasan Ardalan, Ph.D.}
+\date{1987}
+
+
+
+%%% BODY OF THE DOCUMENT: %%%
+\begin{document}
+
+
+
+\maketitle
+% Generates a title based on the \title, \author, and \date commands in the preamble.
+\begin{abstract}
+ 
+The size of the SAR image matrix in terms of range cells and azimuth cells is derived from parameters such as frequency,  chirp bandwidth, range, and  antenna sizes. The equations for the number of range and azimuth cells clearly show the tradeoffs in the design of SAR sytems as well as predict the complexity of image formation.
+
+\end{abstract}
+\paragraph{\copyright{Copyright  1987-2006 Sasan Ardalan}}
+
+
+
+Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License,
+Version 1.2 or any later version published by the Free Software
+Foundation; with no Invariant Sections, no Front-Cover Texts, and
+no Back-Cover Texts. A copy of the license is included in the
+section entitled "GNU Free Documentation License".
+\pagebreak
+
+ \setcounter{tocdepth}{1}
+\tableofcontents
+
+\listoffigures
+
+
+
+\pagebreak
+\chapter{Introduction}
+Define the number of azimuth cells as $N_x$ and the number of range cells as $N_y$ for the area that is being imaged. The final processed SAR image will be an $N_x \times N_y $ image for a one look case. The image formation process will consist of operating on a matrix of this size. The complexity of SAR image formation is thus directly related to the number of azimuth and range cells. Below, we will present a simple derivation of $N_x$ and $N_y$ in terms of SAR parameters.
+
+\chapter{Derivation of Number of Range Cells $N_y$}
+
+The geometry of SAR is illustrated in Figure \ref{fig:sar_geometry}. In Figure \ref{fig:geometry_range_plane} the cross section along the range direction is shown (the range plane). The "look angle" is $\theta$ and $\phi$ is the beam width along the range direction. The beam width is,
+\begin{equation}
+\label{ }
+\phi=a_y\frac{\lambda}{D_y}
+\end{equation}
+
+where $a_y$ is the aperture factor of the antenna and $D_y$ is the antenna length along the range direction. Now from Figure \ref{fig:geometry_range_plane},
+
+\begin{equation}
+\label{ }
+R_0\phi = L_y \cos \theta
+\end{equation}
+
+from which 
+\begin{equation}
+\label{ }
+L_y=\frac{R_0\phi}{\cos \theta }
+\end{equation}
+
+where $L_y$ is the illuminated area along the range plane. Thus,
+\begin{equation}
+\label{ }
+L_y=a_y\frac{\lambda R_0}{D_y \cos \theta}
+\end{equation}
+
+Now the range resolution is related to the time interval between two received echoes from two targets and the ability of the receiver to distinguish between the two received pulses. This time interval is related inversely to the bandwidth. We assume that the chirp pulse compression technique is used. The ambiguity diagram for a single frequency-modulated pulse is shown in Figure \ref{fig:ambiguity} in which the time resolution is seen to be inversely proportional to the chirp bandwidth. The transmitted pulse and the compressed pulse are illustrated in Figure \ref{fig:chirp_compression}. Thus, the range resolution along the beam is, 
+\begin{equation}
+\label{ }
+\delta r = \frac{c}{2} \delta T = \frac{c}{B}
+\end{equation}
+
+By projecting the range ground resolution (xy plane) on the along-beam range direction we can obtain the expression for the ground range resolution.
+\begin{equation}
+\label{ }
+\delta y = \frac{\delta r}{\sin \theta } = \frac{c}{2B \sin \theta }
+\end{equation}
+
+The total number of range cells is, therefore,
+\begin{equation}
+\label{ }
+N_y=\frac{L_y}{\delta y}
+\end{equation}
+\begin{equation}
+\label{ }
+N_y=2 a_y\frac{R_0B\lambda}{D_y c} \tan \theta
+\end{equation}
+
+\chapter{Derivation of number of Azimuth Cells $N_x$}
+The viewing geometry in the azimuth plane is shown in Figure  \ref{fig:geometry_azimuth}. From the figure we have the length of the illuminated area along the azimuth direction at range $R_0$ is,
+
+\begin{equation}
+\label{ }
+L_x=R_0\psi
+\end{equation}
+
+where $\psi$ is the beam width,
+\begin{equation}
+\label{ }
+\psi= a_x \frac{\lambda}{D_x}
+\end{equation}
+
+Let the pulse repetition rate be $f_p$. The transmitter pulses at
+\begin{equation}
+\label{ }
+T_p= \frac{1}{f_p}
+\end{equation}
+intervals apart. Now, a target in the azimuth direction at a constant range $R_0$ remains in the antenna beam for a distance $L_x$. Thus if the vehicle velocity is $v$, the total time in which the target is in view is,
+\begin{equation}
+\label{ }
+T_t=\frac{L_x}{v}
+\end{equation}
+
+
+Thus the total number of pulse echoes that the radar receives during the interval $T_t$ is (see Figure \ref{fig:sar_record})
+\begin{equation}
+\label{ }
+N_x=\frac{T_t}{T_p}
+\end{equation}
+
+
+Now, the pulse repetition rate must  be twice the doppler bandwidth along the azimuth direction. The doppler bandwidth is related to the "synthesizing" of the aperture as the vehicle approaches the target and then recedes. The doppler shift at each extreme is,
+
+\begin{equation}
+\label{ }
+f_D=\frac{f_0v_r}{c}=\frac{v_r}{\lambda}
+\end{equation}
+
+Projecting vehicle velocity along the azimuth path onto the path along the beam,
+\begin{equation}
+\label{ }
+f_D=\frac{v\sin \frac{\psi}{2}}{\lambda}
+\end{equation}
+
+The doppler bandwidth $B_D$ is twice $f_d$. Thus, assuming that $\psi$ is small,
+\begin{equation}
+\label{ }
+B_D = \frac{v\psi}{\lambda}
+\end{equation}
+
+Or substituting for $\psi$,
+\begin{equation}
+\label{ }
+B_D=\frac{a_x}{\lambda}\frac{v\lambda}{D_x} = a_x\frac{v}{D_x}
+\end{equation}
+
+Since $f_p=2B_D$ to satisfy the Nyquist criterion,
+\begin{equation}
+\label{ }
+N_x=2 a_x \frac{v}{D_x}\frac{L_x}{v}
+\end{equation}
+
+Or,
+\begin{equation}
+\label{ }
+N_x=2a_x^2 \frac{R_0\lambda}{D_x^2}
+\end{equation}
+
+
+
+We are done!  
+
+
+ \begin{figure}[hbtp]
+  \centering 
+    \includegraphics[width=4in]{./sar_geometry.pdf}
+  \caption{SAR Geometry}
+\label{fig:sar_geometry}
+\end{figure}
+
+
+
+ \begin{figure}[hbtp]
+  \centering 
+    \includegraphics[width=2in]{./geometry_in_range_plane2.jpg}
+  \caption{Geometry in Range Plane}
+\label{fig:geometry_range_plane}
+\end{figure}
+
+ \begin{figure}[hbtp]
+  \centering 
+    \includegraphics[width=4in]{./ambiguity_diagram.pdf}
+  \caption{Ambiguity Diagram Chirp Pulse Compression}
+\label{fig:ambiguity}
+\end{figure}
+
+
+ \begin{figure}[hbtp]
+  \centering 
+    \includegraphics[width=4in]{./chirp_pulse_compression.pdf}
+  \caption{Chirp Pulse Compression}
+\label{fig:chirp_compression}
+\end{figure}
+
+
+ \begin{figure}[hbtp]
+  \centering 
+    \includegraphics[width=4in]{./azimuth_plane2.png}
+  \caption{Viewing Geometry Azimuth Plane}
+\label{fig:geometry_azimuth}
+\end{figure}
+
+ \begin{figure}[hbtp]
+  \centering 
+    \includegraphics[width=4in]{./SAR_Record_Radar_Returns.png}
+  \caption{SAR Record Radar Returns}
+\label{fig:sar_record}
+\end{figure}
+
+
+
+
+\end{document}
+
+
