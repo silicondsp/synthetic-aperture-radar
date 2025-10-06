@@ -10,7 +10,7 @@ Papers on SAR Image Formation (LaTex)
 <p style="margin-left:1em;">CapsimTMK is  distributed with all the blocks that are needed for modeling and simulating Synthetic Aperture Radar.
 <p style="margin-left:1em;"> This Repository contains the Topologies for SAR. 
 
-<p style="margin-left:1em;">Note: Follow the Getting Started Guide Lines in the CapsimTMK Repository.
+<p style="margin-left:1em;">Note: Follow the Getting Started Guidelines in the CapsimTMK Repository.
 <p style="margin-left:1em;">Once CapsimTMK is installed just run 'make' in this directory (in the SAR repository):  SAR_CapsimTMK_Project
 <p style="margin-left:1em;">Then change to the directory 'Topologies' and run:
 <p style="margin-left:1em;"><strong></strong>./capsim sar_image_formation_5.t </strong>
