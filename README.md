@@ -5,7 +5,8 @@ Papers on SAR Image Formation (LaTex)
 
 
 <h1 align="center">Synthetic Aperture Radar</h1>
-<p style="margin-left:1em;"><strong>CCDSP Technical Papers</strong> ( Papers are GNU Free Documentation License):</p>
+
+
 <table width="964" border="1">
   <tbody>
     <tr>
@@ -38,7 +39,100 @@ Papers on SAR Image Formation (LaTex)
     </tr>  
   </tbody>
 </table>
-<p style="margin-left:1em;">SEASAT SAR Image Los Angeles
+<p style="margin-left:1em;">SEASAT SAR Image Los Angeles (JPL)
 <p>
   <img src="Seasat_picture_of_Los_Angeles.jpg"> 
+<p>
+ <img src="SAR_Block_Diagram_Capsim.png">     
+<div style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="100%" border="1" cellpadding="2" cellspacing="2" style="background-color: #ffffff;">
+<tr valign="top">
+<td width="45" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><b>Item</b></span></p>
+</td>
+<td width="199" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><b>Block Name</b></span></p>
+</td>
+<td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><b>Description</b></span></p>
+</td>
+<td style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><b>Source Code<b></span></p>
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+</tr>
+<tr valign="top">
+<td width="45" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">1</span></p>
+</td>
+<td width="199" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">img_sar_create</span></p>
+</td>
+<td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Create SAR image from parameters</span></p>
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+</tr>
+<tr valign="top">
+<td width="45" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">2</span></p>
+</td>
+<td width="199" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">img_sar_range_compress</span></p>
+</td>
+<td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Compress SAR image in range</span></p>
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+</tr>
+<tr valign="top">
+<td width="45" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">3</span></p>
+</td>
+<td width="199" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">img_sar_azimuth_compress</span></p>
+</td>
+<td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Azimuth compression SAR Image Formation</span></p>
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+</tr>
+<tr valign="top">
+<td width="45" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">4</span></p>
+</td>
+<td width="199" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">imgshrink</span></p>
+</td>
+<td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">This block inputs an image and decimates it.</span></p>
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+</tr>
+<tr valign="top">
+<td width="45" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">5</span></p>
+</td>
+<td width="199" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">imgnormalize</span></p>
+</td>
+<td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Input an image and normalize to range 0-255 and output</span></p>
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+</tr>
+<tr valign="top">
+<td width="45" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">6</span></p>
+</td>
+<td width="199" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">imgwrtiff</span></p>
+</td>
+<td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Writes an input image to a TIFF file as 8 bit samples. Also store the current colormap </span></p>
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p>
+ <img src="image_sar_create.png">   
+ <p>
+ <img src="sar_image_formation.png">   
 
