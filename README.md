@@ -143,7 +143,7 @@ Papers on SAR Image Formation (LaTex)
 </table>
 </div>
 <p>
- <img src="image_sar_create.png">   
+ <img src="image_sar_create.png" width="742" height="1645" >   
  <p>
  <img src="sar_image_formation.png">   
 
