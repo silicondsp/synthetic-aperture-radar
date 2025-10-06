@@ -75,7 +75,7 @@ Papers on SAR Image Formation (LaTex)
 </td>
 <td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Create SAR image from parameters</span></p>
 </td>
-<td style="border-width : 0px;"><br />
+<td style="border-width : 0px;">CAPSIM_PATH/BLOCKS/img_sar_create.s<br />
 </td>
 <td style="border-width : 0px;"><br />
 </td>
@@ -87,7 +87,7 @@ Papers on SAR Image Formation (LaTex)
 </td>
 <td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Compress SAR image in range</span></p>
 </td>
-<td style="border-width : 0px;"><br />
+<td style="border-width : 0px;">CAPSIM_PATH/BLOCKS/img_sar_range_compress.s<br />
 </td>
 <td style="border-width : 0px;"><br />
 </td>
@@ -99,7 +99,7 @@ Papers on SAR Image Formation (LaTex)
 </td>
 <td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Azimuth compression SAR Image Formation</span></p>
 </td>
-<td style="border-width : 0px;"><br />
+<td style="border-width : 0px;">CAPSIM_PATH/BLOCKS/img_sar_azimuth_compress.s<br />
 </td>
 <td style="border-width : 0px;"><br />
 </td>
@@ -111,7 +111,7 @@ Papers on SAR Image Formation (LaTex)
 </td>
 <td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">This block inputs an image and decimates it.</span></p>
 </td>
-<td style="border-width : 0px;"><br />
+<td style="border-width : 0px;">CAPSIM_PATH/BLOCKS/imgshrink.s<br />
 </td>
 <td style="border-width : 0px;"><br />
 </td>
@@ -123,7 +123,7 @@ Papers on SAR Image Formation (LaTex)
 </td>
 <td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Input an image and normalize to range 0-255 and output</span></p>
 </td>
-<td style="border-width : 0px;"><br />
+<td style="border-width : 0px;">CAPSIM_PATH/BLOCKS/imgnormalize.s<br />
 </td>
 <td style="border-width : 0px;"><br />
 </td>
@@ -135,7 +135,7 @@ Papers on SAR Image Formation (LaTex)
 </td>
 <td width="365" style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;">Writes an input image to a TIFF file as 8 bit samples. Also store the current colormap </span></p>
 </td>
-<td style="border-width : 0px;"><br />
+<td style="border-width : 0px;">CAPSIM_PATH/BLOCKS/imgwrtiff.s<br />
 </td>
 <td style="border-width : 0px;"><br />
 </td>
