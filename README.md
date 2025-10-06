@@ -13,7 +13,7 @@ Papers on SAR Image Formation (LaTex)
 <p style="margin-left:1em;">Note: Follow the Getting Started Guidelines in the CapsimTMK Repository.
 <p style="margin-left:1em;">Once CapsimTMK is installed just run 'make' in this directory (in the SAR repository):  SAR_CapsimTMK_Project
 <p style="margin-left:1em;">Then change to the directory 'Topologies' and run:
-<p style="margin-left:1em;"><strong></strong>./capsim sar_image_formation_5.t </strong>
+<p style="margin-left:1em;"><strong></strong>../capsim sar_image_formation_5.t </strong>
 <p style="margin-left:1em;">The new image files created will be listed in the console.
 <p style="margin-left:1em;">For the Capsim Block Diagram and List of Blocks click <a href="#capsim">here</a>.
   
