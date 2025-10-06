@@ -1,0 +1,990 @@
+! This is the core library data
+!
+add add add
+addnoise addnoise addnois
+and and and
+ang ang ang
+arprocess arprocess arproce
+atod atod atod
+autoxcorr autoxcorr autoxco
+avrow avrow avrow
+bdata bdata bdata
+bitmanip bitmanip bitmani
+bitvec bitvec bitvec
+blindadapt blindadapt blindad
+bpf bpf bpf
+cable cable cable
+casfil casfil casfil
+clip clip clip
+clkdly clkdly clkdly
+cmplxfft cmplxfft cmplxff
+cmux cmux cmux
+cmxfft cmxfft cmxfft
+cmxfftfile cmxfftfile cmxfftf
+cmxifft cmxifft cmxifft
+convolve convolve convolv
+cstime cstime cstime
+cubepoly cubepoly cubepol
+cxadd cxadd cxadd
+cxaddnoise cxaddnoise cxaddno
+cxconj cxconj cxconj
+cxcorr cxcorr cxcorr
+cxdelay cxdelay cxdelay
+cxgain cxgain cxgain
+cxmag cxmag cxmag
+cxmakecx cxmakecx cxmakec
+cxmakereal cxmakereal cxmaker
+cxmult cxmult cxmult
+cxnode cxnode cxnode
+cxphase cxphase cxphase
+cxrdfile cxrdfile cxrdfil
+cxreal cxreal cxreal
+cxreim cxreim cxreim
+cxsetsnr cxsetsnr cxsetsn
+cxsink cxsink cxsink
+cxskip cxskip cxskip
+cxsum cxsum cxsum
+datagen datagen datagen
+dco dco dco
+dco2 dco2 dco2
+dec_qpsk dec_qpsk dec_qps
+decbin decbin decbin
+decimate decimate decimat
+delay delay delay
+demux demux demux
+dff dff dff
+dffil dffil dffil
+divby2 divby2 divby2
+divider divider divider
+divider2 divider2 divider
+ds2 ds2 ds2
+ds3 ds3 ds3
+dtoa dtoa dtoa
+ecount ecount ecount
+ecountfap ecountfap ecountf
+encoder encoder encoder
+ethline ethline ethline
+expr expr expr
+fade fade fade
+fconv fconv fconv
+filtnyq filtnyq filtnyq
+fir fir fir
+firfil firfil firfil
+fm fm fm
+freq_meter freq_meter freq_me
+freqimp freqimp freqimp
+fti fti fti
+fxadd fxadd fxadd
+fxdelay fxdelay fxdelay
+fxgain fxgain fxgain
+fxnl fxnl fxnl
+fxnode fxnode fxnode
+gain gain gain
+gauss gauss gauss
+hilbert hilbert hilbert
+histtxt histtxt histtxt
+hold hold hold
+iirfil iirfil iirfil
+img_sar_azimuth_compress img_sar_azimuth_compress img_sar
+img_sar_create img_sar_create img_sar
+img_sar_range_compress img_sar_range_compress img_sar
+imgaddnoise imgaddnoise imgaddn
+imgbreakup imgbreakup imgbrea
+imgbuild imgbuild imgbuil
+imgcalc imgcalc imgcalc
+imgcxmag imgcxmag imgcxma
+imgcxtrl imgcxtrl imgcxtr
+imgfft imgfft imgfft
+imgfilter imgfilter imgfilt
+imggen imggen imggen
+imghisteq imghisteq imghist
+imginterp imginterp imginte
+imgmanip imgmanip imgmani
+imgmux imgmux imgmux
+imgnode imgnode imgnode
+imgnonlinfil imgnonlinfil imgnonl
+imgnormalize imgnormalize imgnorm
+imgprasc imgprasc imgpras
+imgprbin imgprbin imgprbi
+imgproc imgproc imgproc
+imgrdasc imgrdasc imgrdas
+imgrdbin imgrdbin imgrdbi
+imgrdfptiff imgrdfptiff imgrdfp
+imgrdtiff imgrdtiff imgrdti
+imgrtcx imgrtcx imgrtcx
+imgserin imgserin imgseri
+imgserout imgserout imgsero
+imgshrink imgshrink imgshri
+imgsink imgsink imgsink
+imgsubimg imgsubimg imgsubi
+imgwrfptiff imgwrfptiff imgwrfp
+imgwrtiff imgwrtiff imgwrti
+impulse impulse impulse
+intcntrl intcntrl intcntr
+intdmp intdmp intdmp
+integrate integrate integra
+invcust invcust invcust
+inventory inventory invento
+inverse inverse inverse
+invert invert invert
+itf itf itf
+jitter jitter jitter
+jkfade jkfade jkfade
+jkff jkff jkff
+limiter limiter limiter
+linecode linecode linecod
+lms lms lms
+lpc lpc lpc
+lpf lpf lpf
+mau mau mau
+mbset mbset mbset
+mixer mixer mixer
+more more more
+mulaw mulaw mulaw
+multiply multiply multipl
+mux mux mux
+nand nand nand
+nl nl nl
+node node node
+nonlin nonlin nonlin
+nor nor nor
+null null null
+offset offset offset
+operate operate operate
+or or or
+phi_meter phi_meter phi_met
+pllfilt pllfilt pllfilt
+plottxt plottxt plottxt
+pngen pngen pngen
+pngen2 pngen2 pngen2
+powmeter powmeter powmete
+prbinimage prbinimage prbinim
+predftf predftf predftf
+predlms predlms predlms
+prfile prfile prfile
+pri pri pri
+primage primage primage
+pulse pulse pulse
+pump pump pump
+qpsk qpsk qpsk
+quot quot quot
+radar radar radar
+rangen rangen rangen
+rdaiff rdaiff rdaiff
+rdbinimg rdbinimg rdbinim
+rdfile rdfile rdfile
+rdimage rdimage rdimage
+rdmulti rdmulti rdmulti
+repeater repeater repeate
+replicate replicate replica
+resmpl resmpl resmpl
+roundi roundi roundi
+rxhdlc rxhdlc rxhdlc
+sampler1 sampler1 sampler
+sar_azimuth_ref sar_azimuth_ref sar_azi
+sar_chirp sar_chirp sar_chi
+sar_range sar_range sar_ran
+sar_range_compress sar_range_compress sar_ran
+scattertxt scattertxt scatter
+scrambler scrambler scrambl
+sdet sdet sdet
+sdr sdr sdr
+secord secord secord
+seqgen seqgen seqgen
+server server server
+setsnr setsnr setsnr
+sine sine sine
+sink sink sink
+skip skip skip
+skipold skipold skipold
+slice slice slice
+slidefft slidefft slideff
+sn74ls93 sn74ls93 sn74ls9
+spectrogramtxt spectrogramtxt spectro
+spectrumtxt spectrumtxt spectru
+spiceprb spiceprb spicepr
+spread spread spread
+sqr sqr sqr
+sqrtnyq sqrtnyq sqrtnyq
+srff srff srff
+srlatch srlatch srlatch
+stats stats stats
+stc stc stc
+stcode stcode stcode
+str str str
+strch strch strch
+stretch stretch stretch
+sum sum sum
+symimp symimp symimp
+target target target
+tee tee tee
+tff tff tff
+threshold threshold thresho
+toggle toggle toggle
+transpose transpose transpo
+trig trig trig
+txhdlc txhdlc txhdlc
+unitf unitf unitf
+v29decoder v29decoder v29deco
+v29encoder v29encoder v29enco
+v2b v2b v2b
+vcm vcm vcm
+vecbit vecbit vecbit
+wave wave wave
+wraiff wraiff wraiff
+xdco xdco xdco
+xnor xnor xnor
+xor xor xor
+xygen xygen xygen
+zc zc zc
+zdummy zdummy zdummy
+zero zero zero
+zlpf zlpf zlpf
+*END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* krn_blocklib.c */
+/****************************************************************************
+
+		BLOCK LIBRARY FILE
+
+*****************************************************************************
+This file is used to define the block library.  It declares the       
+global model table and initializes it for stars.  (Hierarchical Blocks (HBlocks)  are      
+added later.)                                                        
+                                                                     
+Whenever the library containing the blocks is updated, this file MUST 
+also be updated, and the executable re-made.  Don't forget to set    
+'model_count', the total number of stars defined including NULL!     
+                                                                    
+*/                                                                   
+
+#include <capsim.h>
+
+/* Function declarations */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*FUNCDECL
+
+/* model table Definition */
+*MODTABL
+*END
