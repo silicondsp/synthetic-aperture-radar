@@ -9,7 +9,6 @@
 
 # Linker output
 *.ilk
-*.map
 *.exp
 
 # Precompiled Headers
@@ -35,12 +34,14 @@
 *.i*86
 *.x86_64
 *.hex
+capsim
 
 # Debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
+buffer.dat
 
 # Kernel Module Compile Results
 *.mod*
