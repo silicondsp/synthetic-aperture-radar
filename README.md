@@ -135,7 +135,7 @@ Papers on SAR Image Formation (LaTex)
 <p>
 <div id="capsim_instructions">
 <h1>    Instructions for Running Capsim&reg; SAR Block Diagram Simulation.</h1>
-  <p style="margin-left:1em;">Obtain the Capsim Text Mode Kernel (CapsimTMK) for Linux  from:
+  <p style="margin-left:1em;">Obtain the Capsim&reg; Text Mode Kernel (CapsimTMK) for Linux  from:
 <p style="margin-left:1em;"><a href="https://github.com/silicondsp/capsim-tmk">GitHub Capsim Text Mode  Repository </a>
 <p style="margin-left:1em;">CapsimTMK is  distributed with all the blocks that are needed for modeling and simulating Synthetic Aperture Radar.
 <p style="margin-left:1em;"> This Repository contains the Topologies for SAR. 
