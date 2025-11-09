@@ -2,7 +2,22 @@
 Modeling and Simulation of Synthetic Aperture Radar (SAR) in Capsim
 Block Diagram Modelling and Simulation Tool. 
 Papers on SAR Image Formation (LaTex)
-
+<table width="400px" border="1" cellpadding="2" cellspacing="2" style="background-color: #ffffff;">
+<tr valign="top">
+<td style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"> <a href="https://www.ccdsp.org/"><img src="sd-logo-tm_sm.png" width="104" height="109" alt="sdsp logo" title="" /></a>
+</span></p>
+</td>
+<td style="border-width : 0px;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;"><a href="#linux_tux"><img src="images/Tux.svg.png" width="62" height="74" alt="Linux Tux" title="" /></a> <!-- width="250" height="297" -->Developed on Linux.
+</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 0px;"><br />
+</td>
+<td style="border-width : 0px;"><br />
+</td>
+</tr>
+</table>
 
 <h1 align="center">Synthetic Aperture Radar</h1>
 <p style="margin-left:1em;"><a href="#capsim_instructions" >Instructions</a> for Running Capsim&reg; SAR Block Diagram Simulation.
@@ -136,7 +151,7 @@ Papers on SAR Image Formation (LaTex)
 <div id="capsim_instructions">
 <h1>    Instructions for Running Capsim&reg; SAR Block Diagram Simulation.</h1>
   <p style="margin-left:1em;">Obtain the Capsim&reg; Text Mode Kernel (CapsimTMK) for Linux  from:
-<p style="margin-left:1em;"><a href="https://github.com/silicondsp/capsim-tmk">GitHub Capsim Text Mode  Repository </a>
+<p style="margin-left:1em;"><a href="https://github.com/silicondsp/capsim-tmk">GitHub Capsim Text Mode  Repository <img src="images/github-mark.png" width="46" height="45" alt="github"/> </a>
 <p style="margin-left:1em;">CapsimTMK is  distributed with all the blocks that are needed for modeling and simulating Synthetic Aperture Radar.
 <p style="margin-left:1em;"> This Repository contains the Topologies for SAR. 
 
