@@ -45,12 +45,20 @@
 \newcommand{\pkg}[1]{\textsf{#1}}
 \newcommand{\lshort}{\href{http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf}{The Not So Short Introduction to \LaTeX{}}}
 
-
+\usepackage{titlesec}
+    \titleformat{\chapter}[display]
+        {\normalfont\Large\bfseries}    % Make title \large and bold
+        { Chapter~\thechapter}     % Write Chapter X in \huge font
+        {20pt}                          % 20pt distance between Chapter X and title
+        {}
+        [\vspace{1ex}\titlerule]        % Add a line below chapter title
+   % {\huge Chapter~\thechapter}     % Write Chapter X in \huge font     
+        
 % Define the title, author and date of the document.
 % If the date is undefined, the current date is substituted.
 \title {Synthetic Aperture Radar Point Target Response}
-\author{Sasan Ardalan, Ph.D.}
-%%\date{1987-1990}
+\author{Sasan Ardalan Extra Class Amateur Radio, Ph.D.}
+\date{1987-1990}
 
 
 
@@ -60,10 +68,12 @@
 
 \thispagestyle{empty}
 \maketitle
+\thispagestyle{empty} % Removes the page number from the title page
+
 % Generates a title based on the \title, \author, and \date commands in the preamble.
 \begin{abstract}
  
-The algorithms and simulation results for a point target in Synthetic Aperture Radar (SAR) will be presented. The target simulations will be performed following the procedure developed by McDonough, et. al. (1985) [1]. Simulation results will be provided through the block diagram modeling   of the SAR system with Capsim\textsuperscript{\textregistered}[2]. The SAR project has been a part of the Capsim\textsuperscript{\textregistered} distribution since 1990. The research on SAR was conducted  by the author while a Professor at NC State University in 1987.
+The algorithms for computing the  point target response in Synthetic Aperture Radar (SAR) will be presented. The target modeling and simulations will be performed following the procedure developed by McDonough, et. al. (1985) [1] for SEASAT. Simulation results will be provided through the block diagram modeling   of the SAR system with Capsim\textsuperscript{\textregistered}[2]. The SAR project has been a part of the Capsim\textsuperscript{\textregistered} distribution since 1990. The research on SAR was conducted  by the author while a Professor at NC State University in 1987. The GitHub repository was created in November 2025.
 
 \end{abstract}
 \paragraph{\copyright{Copyright  1987-2006 Sasan Ardalan}}
@@ -100,7 +110,7 @@ section entitled "GNU Free Documentation License".
 
 \chapter{Introduction}
 
-The algorithms and simulation results for a point target in Synthetic Aperture Radar (SAR) will be presented. The target simulations will be performed following the procedure developed by McDonough, et. al. (1985) [1]  for the typical SEASAT-SAR geometry shown in Figure \ref{fig:geometry} and with parameters given in Table 1. A technique by Fitch [3]  will also be used to avoid a Hilbert transform. 
+The algorithms for computing the  point target response in Synthetic Aperture Radar (SAR) will be presented. The target modeling and simulations will be performed following the procedure developed by McDonough, et. al. (1985) [1] for SEASAT. The algorithms and simulation results for a point target in Synthetic Aperture Radar (SAR) will be presented. The  typical SEASAT-SAR geometry is shown  in Figure \ref{fig:geometry} and with parameters given in Table 1. A technique by Fitch [3]  will also be used to avoid a Hilbert transform. 
 
 
 
@@ -204,22 +214,27 @@ where $r(\tau)$ is the slant range from the radar at time $\tau$, to the target 
 g(t)=\cos \left [ \left (2 \pi f_1 t-2r(\tau)/\lambda  \right )+ \pi K_r \left ( t -2 r(\tau)/c \right )^2 \right ] 
 \end{equation}
 
-\subsection{Range Compression}
+\section{Range Compression}
 
 To get any useful information regarding the position of the target, the down-converted received signal can be correlated with a reference function. Thus, when the two signals are coincident at some  time and have the same shape the output of the correlation is at a maximum. The correlation is performed as the convolution of $g'(t)$ and the replica $s'(-t)$ as [1],
 
 
 \begin{equation}
 \label{eq:convolution}
-\begin{split}
 s'(-t)*g'(t) = \Delta t/2 Re \left [ \sin \left (\pi B_r \left ( t-2r(\tau)/c \right ) \right ) /(\pi B_r \left ( t-2r(\tau)/c \right ) 
-\times e^{-j4 \pi r(\tau)/\lambda } e^{2 pi f_1 t } \right ] \\
-|t-2r(\tau)/c | \leq \Delta t
-\end{split}
+\times e^{-j4 \pi r(\tau)/\lambda } e^{j2 \pi f_1 t } \right ]  
 \end{equation}
 
 
-where $B_r$ is the bandwidth.
+where
+\begin{equation}
+\label{eq:convolution-condition}
+| t-\frac{2r(\tau)}{c} | \leq \Delta t
+\end{equation}
+
+
+
+and  $B_r$ is the bandwidth.
 
 
 
@@ -258,19 +273,12 @@ Figure \ref{fig:range_compression_sketch} illustrates the FM Chirped Pulse and t
 
 
 The range compression process is repeated by moving in the azimuthal direction, fixing the slant range to the point target $r(\tau)$ and transmitting pulses at the PRF rate.  For this particular simulation, using  an integration time of 2 seconds and a PRF of 1645, a total of 3290 pulses were transmitted.
-
-\par
-As the range returns are received a matrix is formed as shown in Figure \ref{fig:sar_image_record}. The Capsim\textsuperscript{\textregistered} Block Diagram of the SAR Image Formation is shown in Figure \ref{fig:sar_block_diagram}. 
-\par
-An illustration of the SAR image prior to range  compression and azimuth compression for a point target is shown in Figure \ref{fig:create_image}.
-
-\par
 \par
 
 
 
 
-If we consider a number of successive echoes, due to the large change in the range from the satellite to the target during integration time $T_i$, the range compressed point response will be a parabolic curve as shown by Equation \ref{eq:slantRange} and :
+If we consider a number of successive echoes, due to the large change in the range from the satellite to the target during integration time $T_i$,  the range compressed point response will be a parabolic curve as shown by Equation \ref{eq:slantRange} and :
 
 \begin{equation}
 \label{ }
@@ -286,9 +294,52 @@ and
 
 where $Y$ is the start of each pulse, $Z=v\tau$, and $\tau'$ is the pulse duration.
 
-\subsection{Azimuth Compression}
 
-Now, the complex exponential term $e^{-4\pi r(\tau)\lambda}$ appearing in Equation \ref{eq:convolution}, represents the azimuth phase history which is encoded in the range compressed signal. If $r(\tau)$ is expanded about $\tau_c$,
+
+\begin{figure}[H]
+  \centering 
+    \includegraphics[height=8cm]{SAR_Image_Formation/FFT_FM_Chirp_SAR.png}
+  \caption{SAR Range FM Chirp Radar Signal}
+\label{fig:chirp}
+\end{figure}
+
+\begin{figure}[H]
+  \centering 
+    \includegraphics[height=8cm]{SAR_Image_Formation/range_compression_plot.png}
+  \caption{SAR Image Range Compression}
+\label{fig:range_compression}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering 
+    \includegraphics[height=8cm]{SAR_Image_Formation/chirp_pulse_compression.pdf}
+  \caption{SAR Image Range FM Chirped Radar and Compression }
+\label{fig:range_compression_sketch}
+\end{figure}
+
+\begin{figure}[H]
+  \centering 
+    \includegraphics[height=8cm]{SAR_Image_Formation/range_compression_plot_zoomed_bar_chart.png}
+  \caption{SAR Image Range Compression Zoomed Discrete Showing Sin(x)/x Response}
+\label{fig:range_compression_sinx_over_x}
+\end{figure}
+
+As the range returns are received a matrix is formed as shown in Figure \ref{fig:sar_image_record}. 
+
+ \begin{figure}[H]
+  \centering 
+    \includegraphics[width=4in]{./SAR_Record_Radar_Returns.png}
+  \caption{SAR Record Radar Returns}
+\label{fig:sar_image_record}
+\end{figure}
+
+
+
+
+\section{Azimuth Compression}
+
+Now, the complex exponential term $e^{-j4\pi r(\tau)\lambda}$ appearing in Equation \ref{eq:convolution}, represents the azimuth phase history which is encoded in the range compressed signal. If $r(\tau)$ is expanded about $\tau_c$,
 \begin{equation}
 \label{ }
 r(\tau) =r(\tau_c) + \dot{r}(\tau_c)(\tau -\tau_c)+\frac{1}{2} \ddot{r} (\tau_c)(\tau -\tau_c)^2+...
@@ -359,48 +410,26 @@ where $B_D= 2 f_{DC} $. The matched filter response $h(\tau)$, is generated with
 
 We note that since both $g(\tau)$ and $h(\tau)$ are complex, the original length of the sequence for the FFT's were used. The above process is repeated until each of the range compressed lines are compressed in the azimuth. The output of the correlator $\frac{\sin \pi B_D(\tau -\tau_c)}{\pi B_D(\tau -\tau_c}$ is a maximum when $\tau =\tau_c$, or when the azimuth position of the point target is aligned with the mid point of the beam. 
 
-The SAR image for a point targets are shown in Figures \ref{fig:sar_image_formation}, and \ref{fig:sar_image_formation_2}.
-
-
-
 
 
 \begin{figure}[H]
   \centering 
-    \includegraphics[height=8cm]{SAR_Image_Formation/FFT_FM_Chirp_SAR.png}
-  \caption{SAR Range FM Chirp Radar Signal}
-\label{fig:chirp}
-\end{figure}
-
-\begin{figure}[H]
-  \centering 
-    \includegraphics[height=8cm]{SAR_Image_Formation/range_compression_plot.png}
-  \caption{SAR Image Range Compression}
-\label{fig:range_compression}
+    \includegraphics[height=8cm]{SAR_Image_Formation/SAR_Azimuth_Reference.png}
+  \caption{SAR Azimuth Range Reference (Complex)}
+\label{fig:sar_azimuth_ref}
 \end{figure}
 
 
-\begin{figure}[H]
-  \centering 
-    \includegraphics[height=8cm]{SAR_Image_Formation/chirp_pulse_compression.pdf}
-  \caption{SAR Image Range FM Chirped Radar and Compression }
-\label{fig:range_compression_sketch}
-\end{figure}
 
-\begin{figure}[H]
-  \centering 
-    \includegraphics[height=8cm]{SAR_Image_Formation/range_compression_plot_zoomed_bar_chart.png}
-  \caption{SAR Image Range Compression Zoomed Discrete Showing Sin(x)/x Response}
-\label{fig:range_compression_sinx_over_x}
-\end{figure}
+\chapter{SAR Image for Point Targets and Block Diagram Modeling and Simulation}
+
+The Capsim\textsuperscript{\textregistered}  Block Diagram of the SAR Image Formation is shown in Figure \ref{fig:sar_block_diagram}. The complete C code is provided in the GitHub  Repository [2].
+\par
+An illustration of the SAR image prior to range  compression and azimuth compression for a point target created by the block diagram modeling and simulation  tool is shown in Figure \ref{fig:create_image}.
+
+\par
 
 
- \begin{figure}[H]
-  \centering 
-    \includegraphics[width=4in]{./SAR_Record_Radar_Returns.png}
-  \caption{SAR Record Radar Returns}
-\label{fig:sar_image_record}
-\end{figure}
 
 \begin{figure}[H]
   \centering 
@@ -420,13 +449,9 @@ The SAR image for a point targets are shown in Figures \ref{fig:sar_image_format
 \end{figure}
 
 
+The SAR image for  point targets are shown in Figures \ref{fig:sar_image_formation}, and \ref{fig:sar_image_formation_2}.
 
-\begin{figure}[H]
-  \centering 
-    \includegraphics[height=8cm]{SAR_Image_Formation/SAR_Azimuth_Reference.png}
-  \caption{SAR Azimuth Range Reference (Complex)}
-\label{fig:sar_azimuth_ref}
-\end{figure}
+
 
 
 \begin{figure}[H]
@@ -451,21 +476,21 @@ The SAR image for a point targets are shown in Figures \ref{fig:sar_image_format
 
 
 
-\subsection{Auto-Focusing}
+\chapter{Auto-Focusing}
 
 The fundamental parameters in SAR target response are the Doppler frequency and the rate of change of the frequency. These parameters are solely dependent on the rate of change of the relative motion characteristics between the SAR sensor and the position of the target. Therefore, a precise knowledge of the spacecraft state vector is necessary in order to determine these parameters. In situations where a precise satellite tracking and ephemeris are not given and the Doppler spectrum and frequency sweep rate are not known apriori, these parameters must be derived from the radar data. Estimating the Doppler parameters is the topic of autofocus and clutter-locking. This adds to the system complexity, and a controller must be designed to not only generate the reference functions for the azimuth, but also to  provide a feedback loop to refine and readjust the Doppler parameters.
 
 
-\subsection{SAR Block Diagram Simulation}
+\chapter{SAR Block Diagram Simulation Repository on GitHub}
 Complete C code for  SAR signal processing is available for the Capsim\textsuperscript{\textregistered} Block Diagram Simulation and Modeling Environment. Visit the GitHub repository at:
 \par
 https://github.com/silicondsp/synthetic-aperture-radar
 \par 
+\par 
 The repository includes all the C code blocks  and documentation.
  Also visit
 \par
-\par
-https://www.ccdsp.org
+https://www.silicondsp.com
 \par
 
 \pagebreak
