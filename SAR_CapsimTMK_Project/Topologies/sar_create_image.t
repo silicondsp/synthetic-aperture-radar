@@ -17,7 +17,7 @@ arg -1 (none)
 
 param float 1275    fc   "Carrier Frequency, MHz"
 param float 0.5621    Kr   "Pulse Chirp Rate, MHz/microsecond"
-param float 33.8    tau   "Pulse Duration Microseconds"
+param float 33.8    tau   "33.8 Pulse Duration Microseconds"
 param float 19    Br   "Pulse Bandwidth, MHz"
 param float 11.38    fIF   "Center Frequency (IF) MHz"
 param float 1645    prf   "Pulse Repition Rate, Hz"
@@ -25,12 +25,13 @@ param float 45.03    fs   "Sampling Rate, MHz"
 param float 1150    fDc   "Doppler Frequency, Hz"
 param float 501.27    Kaz   "Doppler Rate of Change , Hz"
 param float 7    v   "Platform Velocity, Km/s"
-param float 2    total   "Integration Time, s"
+param float 2.0    total   "Integration Time, s"
 param float 0    tazs   "Azimuth Sample Time"
 param float 1    tc   "tc seconds"
 param float 840    rpRef   "Reference Point Range rp, kM"
-param float 840    rp   "Point Range rp, kM"
-param int 1000    tpi   "Point Azimuth tp in index units"
+param float 851   rp   "Point Range rp, kM"
+param int  300    tpi   "Point Azimuth tp in index units"
+param float 67.6    rangeTime   "Range Time usec"
 block img_sar_create0 img_sar_create
 
 
