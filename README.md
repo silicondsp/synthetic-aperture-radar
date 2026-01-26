@@ -162,7 +162,7 @@ Papers on SAR Image Formation (LaTex)
 <p style="margin-left:1em;">The new image files created will be listed in the console.
 <p style="margin-left:1em;">For the Capsim Block Diagram and List of Blocks click <a href="#capsim">here</a>.
   
- <img src="image_sar_create.png" width="742" height="1645" >   
+ <img src="image_sar_create.jpg" width="742" height="1645" >   
  <p style="margin-left:1em;"> Raw SAR SEASAT Image for Point Target created by Capsim&reg; SAR Block <strong>img_sar_create.s</strong> 
    <br><br>
  <img src="sar_image_formation.png">   
