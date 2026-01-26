@@ -60,7 +60,7 @@
 % Generates a title based on the \title, \author, and \date commands in the preamble.
 \begin{abstract}
  
-The size of the SAR image matrix in terms of range cells and azimuth cells is derived from parameters such as frequency,  chirp bandwidth, range, and  antenna sizes. The equations for the number of range and azimuth cells clearly show the tradeoffs in the design of SAR sytems as well as predict the complexity of image formation.
+The size of the Synthetic Aperture Radar (SAR)  image matrix in terms of the number of range cells and azimuth cells is derived from parameters such as frequency,  chirp bandwidth, range, and  antenna sizes. The equations for the number of range and azimuth cells clearly show the tradeoffs in the design of SAR systems as well as predict the complexity of image formation. The SEASAT SAR system is illustrated.
 
 \end{abstract}
 \paragraph{\copyright{Copyright  1987-2006 Sasan Ardalan}}
@@ -88,7 +88,7 @@ Define the number of azimuth cells as $N_x$ and the number of range cells as $N_
 
 \chapter{Derivation of Number of Range Cells $N_y$}
 
-The geometry of SAR is illustrated in Figure \ref{fig:sar_geometry}. In Figure \ref{fig:geometry_range_plane} the cross section along the range direction is shown (the range plane). The "look angle" is $\theta$ and $\psi$ is the beam width along the range direction. The beam width is,
+The geometry of the SEASAT SAR is illustrated in Figure \ref{fig:sar_geometry_range}. In Figure \ref{fig:geometry_range_plane} the cross section along the range direction is shown (the range plane). The "look angle" is $\theta$ and $\psi$ is the beam width along the range direction. The beam width is,
 \begin{equation}
 \label{ }
 \psi=a_y\frac{\lambda}{D_y}
@@ -136,18 +136,20 @@ N_y=2 a_y\frac{R_0B\lambda}{D_y c} \tan \theta
 \end{equation}
 
 \chapter{Derivation of number of Azimuth Cells $N_x$}
-The viewing geometry in the azimuth plane is shown in Figure  \ref{fig:geometry_azimuth}. From the figure we have the length of the illuminated area along the azimuth direction at range $R_0$ is,
+The SEASAT SAR geometry showing the azimuth beam width is shown in Figure \ref{fig:sar_geometry_azimuth}. The viewing geometry in the azimuth plane  is shown in Figure   \ref{fig:geometry_azimuth}. From the figure we have the length of the illuminated area along the azimuth direction at range $R_0$ is,
 
 \begin{equation}
-\label{ }
-L_x=R_0\psi
+\label{eq:Lx}
+L_x=R_0\varphi
 \end{equation}
 
-where $\psi$ is the beam width,
+where $\varphi$ is the beam width,
 \begin{equation}
-\label{ }
-\psi= a_x \frac{\lambda}{D_x}
+\label{eq:phi}
+\varphi= a_x \frac{\lambda}{D_x}
 \end{equation}
+
+
 
 Let the pulse repetition rate be $f_p$. The transmitter pulses at
 \begin{equation}
@@ -178,16 +180,16 @@ f_D=\frac{f_0v_r}{c}=\frac{v_r}{\lambda}
 Projecting vehicle velocity along the azimuth path onto the path along the beam,
 \begin{equation}
 \label{ }
-f_D=\frac{v\sin \frac{\psi}{2}}{\lambda}
+f_D=\frac{v\sin \frac{\varphi}{2}}{\lambda}
 \end{equation}
 
-The doppler bandwidth $B_D$ is twice $f_d$. Thus, assuming that $\psi$ is small,
+The doppler bandwidth $B_D$ is twice $f_d$. Thus, assuming that $\varphi$ is small,
 \begin{equation}
 \label{ }
-B_D = \frac{v\psi}{\lambda}
+B_D = \frac{v\varphi}{\lambda}
 \end{equation}
 
-Or substituting for $\psi$,
+Or substituting for $\varphi$,
 \begin{equation}
 \label{ }
 B_D=\frac{a_x}{\lambda}\frac{v\lambda}{D_x} = a_x\frac{v}{D_x}
@@ -205,18 +207,57 @@ Or,
 N_x=2a_x^2 \frac{R_0\lambda}{D_x^2}
 \end{equation}
 
-
-
 We are done!  
+
+\chapter{Azimuth Resolution}
+From the number of azimuth cells $N_x$ and   the length of the illuminated area along the azimuth direction, $L_x$, we can obtain the azimuth  resolution $\delta_{az}$:
+
+\begin{equation}
+\label{ }
+\delta_{az}=\frac{L_x}{N_x}
+\end{equation}
+
+Now from Equation \ref{eq:Lx},  substituting for $\varphi$ from Equation \ref{eq:phi}  we have,
+
+\begin{equation}
+\label{ }
+L_x=R_0 a_x \frac{\lambda}{D_x}
+\end{equation}
+
+Substituting for $L_x$ and $N_x$ we have,
+
+
+\begin{equation}
+\label{ }
+\delta_{az}=\frac{R_0 a_x \frac{\lambda}{D_x}}{2a_x^2 \frac{R_0\lambda}{D_x^2}}
+\end{equation}
+
+
+Cancelling terms we have:
+
+\begin{equation}
+\label{ }
+\delta_{az}=\frac{D_x}{2a_x} 
+\end{equation}
+
+If we assume $a_x \approx 1 $, then 
+
+\begin{equation}
+\label{ }
+\delta_{az}=\frac{D_x}{2} 
+\end{equation}
+
+This  result   shows that the azimuth resolution only depends on the physical size of the antenna in the along-track direction. 
+
+
 
 
  \begin{figure}[hbtp]
   \centering 
-    \includegraphics[width=4in]{./sar_geometry.pdf}
-  \caption{SAR Geometry}
-\label{fig:sar_geometry}
+    \includegraphics[width=4in]{./sar_geometry_range.jpg}
+  \caption{SAR Geometry  Derived From NASA/JPL}
+\label{fig:sar_geometry_range}
 \end{figure}
-
 
 
  \begin{figure}[hbtp]
@@ -244,7 +285,14 @@ We are done!
 
  \begin{figure}[hbtp]
   \centering 
-    \includegraphics[width=4in]{./azimuth_plane2.png}
+    \includegraphics[width=4in]{./sar_geometry_azimuth.jpg}
+  \caption{SAR Geometry Azimuth}
+\label{fig:sar_geometry_azimuth}
+\end{figure}
+
+ \begin{figure}[hbtp]
+  \centering 
+    \includegraphics[width=4in]{./azimuth_plane3.jpg}
   \caption{Viewing Geometry Azimuth Plane}
 \label{fig:geometry_azimuth}
 \end{figure}

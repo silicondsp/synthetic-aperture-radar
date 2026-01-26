@@ -57,7 +57,7 @@
 % Define the title, author and date of the document.
 % If the date is undefined, the current date is substituted.
 \title {Synthetic Aperture Radar Point Target Response}
-\author{Sasan Ardalan Extra Class Amateur Radio, Ph.D.}
+\author{Sasan Ardalan, Extra Class Amateur Radio, Ph.D.}
 \date{}
 
 
@@ -110,7 +110,7 @@ section entitled "GNU Free Documentation License".
 
 \chapter{Introduction}
 
-The algorithms for computing the  point target response in Synthetic Aperture Radar (SAR) will be presented. The target modeling and simulations will be performed following the procedure developed by McDonough, et. al. (1985) [1] for SEASAT. The algorithms and simulation results for a point target in Synthetic Aperture Radar (SAR) will be presented. The  typical SEASAT-SAR geometry is shown  in Figure \ref{fig:geometry} and with parameters given in Table 1. A technique by Fitch [3]  will also be used to avoid a Hilbert transform. 
+The algorithms for computing the  point target response in Synthetic Aperture Radar (SAR) will be presented. The target modeling and simulations will be performed following the procedure developed by McDonough, et. al. (1985) [1] for SEASAT. The  typical SEASAT-SAR geometry is shown  in Figure \ref{fig:geometry} and with parameters given in Table 1. A technique by Fitch [3]  will also be used to avoid a Hilbert transform. 
 
 
 
@@ -204,14 +204,14 @@ The received pulse $g(t)$ will be delayed by the round trip time of $ 2 \frac{r(
 
 \begin{equation}
 \label{ }
-g(t)=\cos \left [ \left (2 \pi f_0 (t-2r(\tau)/c \right ) + \pi K_r \left ( t -2 r(\tau)/c \right )^2 \right  ]~~| t-2r(\tau)/c | \leq \Delta t/2
+g(t)=\cos \left [ 2 \pi f_0 [t-2r(\tau)/c  ]+ \pi K_r  [ t -2 r(\tau)/c ] ^2  \right  ]~~| t-2r(\tau)/c | \leq \Delta t/2
 \end{equation}
 
 where $r(\tau)$ is the slant range from the radar at time $\tau$, to the target at position $(r_p,\tau_p)$, and $c$ is the speed of light. To minimize the required sampling rate, the signal is then mixed with a local oscillator at the carrier frequency 1275 MHz and down-converted to some intermediate frequency of $f_1 $= 11.38 MHz resulting in,
 
 \begin{equation}
 \label{eq:matchedFilter}
-g(t)=\cos \left [ \left (2 \pi f_1 t-2r(\tau)/\lambda  \right )+ \pi K_r \left ( t -2 r(\tau)/c \right )^2 \right ] 
+g'(t)=\cos \left [  2 \pi [f_1 t-2r(\tau)/\lambda  ]+ \pi K_r \left [ t -2 r(\tau)/c \right ]^2 \right ] 
 \end{equation}
 
 \section{Range Compression}
@@ -221,8 +221,8 @@ To get any useful information regarding the position of the target, the down-con
 
 \begin{equation}
 \label{eq:convolution}
-s'(-t)*g'(t) = \Delta t/2 Re \left [ \sin \left (\pi B_r \left ( t-2r(\tau)/c \right ) \right ) /(\pi B_r \left ( t-2r(\tau)/c \right ) 
-\times e^{-j4 \pi r(\tau)/\lambda } e^{j2 \pi f_1 t } \right ]  
+s'(-t)*g'(t) = \Delta t/2 Re \left [  \frac { \sin   [\pi B_r  ( t-\frac{2r(\tau)}{c} )]  } {\pi B_r (  t-\frac{2r(\tau)}{c} )}  \right ]   
+\times e^{-j4 \pi r(\tau)/\lambda } e^{j2 \pi f_1 t } 
 \end{equation}
 
 
@@ -391,7 +391,7 @@ For the azimuth compression an operation similar to the range compression is req
 \begin{split}
 b(\tau)=g(\tau)* h(\tau) = e^{j2\pi f_{DC}\tau)} 
 \times   e^{-j2\pi (2r_c/\lambda + f_{DC} \tau_c)}     \times \\
-\Delta  \tau \left ( \pi B_D (\tau -\tau_c) \right ) /(\pi B_D (\tau -\tau_c)) ~~ | \tau -\tau_c| \leq \Delta \tau /2
+\Delta  \tau \frac{\sin \left ( \pi B_D (\tau -\tau_c) \right ) }{(\pi B_D (\tau -\tau_c)) }~~ | \tau -\tau_c| \leq \Delta \tau /2
 \end{split}
 \end{equation}
 

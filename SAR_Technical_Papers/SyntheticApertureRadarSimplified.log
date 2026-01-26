@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  17 JAN 2026 01:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  26 JAN 2026 01:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -654,6 +654,15 @@ LaTeX Warning: Label ` ' multiply defined.
 
 LaTeX Warning: Label ` ' multiply defined.
 
+
+LaTeX Warning: Label ` ' multiply defined.
+
+
+LaTeX Warning: Label ` ' multiply defined.
+
+
+LaTeX Warning: Label ` ' multiply defined.
+
 )
 \openout1 = `SyntheticApertureRadarSimplified.aux'.
 
@@ -762,44 +771,49 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 [4]
-<./sar_geometry.pdf, id=96, 614.295pt x 794.97pt>
-File: ./sar_geometry.pdf Graphic file (type pdf)
-<use ./sar_geometry.pdf>
-Package pdftex.def Info: ./sar_geometry.pdf  used on input line 215.
-(pdftex.def)             Requested size: 289.07999pt x 374.10904pt.
-<./geometry_in_range_plane2.jpg, id=97, 360.34625pt x 964.60374pt>
+<./sar_geometry_range.jpg, id=106, 891.33pt x 803.0pt>
+File: ./sar_geometry_range.jpg Graphic file (type jpg)
+<use ./sar_geometry_range.jpg>
+Package pdftex.def Info: ./sar_geometry_range.jpg  used on input line 257.
+(pdftex.def)             Requested size: 289.07999pt x 260.43279pt.
+<./geometry_in_range_plane2.jpg, id=107, 360.34625pt x 964.60374pt>
 File: ./geometry_in_range_plane2.jpg Graphic file (type jpg)
 <use ./geometry_in_range_plane2.jpg>
-Package pdftex.def Info: ./geometry_in_range_plane2.jpg  used on input line 224
+Package pdftex.def Info: ./geometry_in_range_plane2.jpg  used on input line 265
 .
 (pdftex.def)             Requested size: 144.54pt x 386.90912pt.
-<./ambiguity_diagram.pdf, id=98, 614.295pt x 794.97pt>
+<./ambiguity_diagram.pdf, id=108, 614.295pt x 794.97pt>
 File: ./ambiguity_diagram.pdf Graphic file (type pdf)
 <use ./ambiguity_diagram.pdf>
-Package pdftex.def Info: ./ambiguity_diagram.pdf  used on input line 231.
+Package pdftex.def Info: ./ambiguity_diagram.pdf  used on input line 272.
 (pdftex.def)             Requested size: 289.07999pt x 374.10904pt.
-<./chirp_pulse_compression.pdf, id=99, 614.21272pt x 794.97pt>
+<./chirp_pulse_compression.pdf, id=109, 614.21272pt x 794.97pt>
 File: ./chirp_pulse_compression.pdf Graphic file (type pdf)
 <use ./chirp_pulse_compression.pdf>
-Package pdftex.def Info: ./chirp_pulse_compression.pdf  used on input line 239.
+Package pdftex.def Info: ./chirp_pulse_compression.pdf  used on input line 280.
 
 (pdftex.def)             Requested size: 289.07999pt x 374.15755pt.
-<./azimuth_plane2.png, id=100, 625.33624pt x 986.68625pt>
-File: ./azimuth_plane2.png Graphic file (type png)
-<use ./azimuth_plane2.png>
-Package pdftex.def Info: ./azimuth_plane2.png  used on input line 247.
-(pdftex.def)             Requested size: 289.07999pt x 456.13953pt.
-<./SAR_Record_Radar_Returns.png, id=102, 1014.03844pt x 697.8572pt>
+<./sar_geometry_azimuth.jpg, id=110, 1006.76125pt x 815.045pt>
+File: ./sar_geometry_azimuth.jpg Graphic file (type jpg)
+<use ./sar_geometry_azimuth.jpg>
+Package pdftex.def Info: ./sar_geometry_azimuth.jpg  used on input line 288.
+(pdftex.def)             Requested size: 289.07999pt x 234.03136pt.
+<./azimuth_plane3.jpg, id=111, 795.97375pt x 835.12pt>
+File: ./azimuth_plane3.jpg Graphic file (type jpg)
+<use ./azimuth_plane3.jpg>
+Package pdftex.def Info: ./azimuth_plane3.jpg  used on input line 295.
+(pdftex.def)             Requested size: 289.07999pt x 303.29349pt.
+<./SAR_Record_Radar_Returns.png, id=112, 1014.03844pt x 697.8572pt>
 File: ./SAR_Record_Radar_Returns.png Graphic file (type png)
 <use ./SAR_Record_Radar_Returns.png>
-Package pdftex.def Info: ./SAR_Record_Radar_Returns.png  used on input line 254
+Package pdftex.def Info: ./SAR_Record_Radar_Returns.png  used on input line 302
 .
 (pdftex.def)             Requested size: 289.07999pt x 198.94461pt.
 
 
 [5]
 
-[6 <./sar_geometry.pdf>]
+[6 <./sar_geometry_range.jpg>]
 
 [7 <./geometry_in_range_plane2.jpg>]
 
@@ -807,9 +821,11 @@ Package pdftex.def Info: ./SAR_Record_Radar_Returns.png  used on input line 254
 
 [9 <./chirp_pulse_compression.pdf>]
 
-[10 <./azimuth_plane2.png>]
+[10 <./sar_geometry_azimuth.jpg>]
 
-[11 <./SAR_Record_Radar_Returns.png>]
+[11 <./azimuth_plane3.jpg>]
+
+[12 <./SAR_Record_Radar_Returns.png>]
 \tf@toc=\write5
 \openout5 = `SyntheticApertureRadarSimplified.toc'.
 
@@ -827,35 +843,37 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `SyntheticApertureRadarSimplified.out' has no
 t changed.
-(rerunfilecheck)             Checksum: 70E914BB8E4008CFFE5ADD43DEC559C2;824.
+(rerunfilecheck)             Checksum: F5DD895442CB7B0C0929B5E801D8879E;960.
  ) 
 Here is how much of TeX's memory you used:
- 13321 strings out of 473190
- 205120 string characters out of 5715801
- 633709 words of memory out of 5000000
- 36379 multiletter control sequences out of 15000+600000
+ 13340 strings out of 473190
+ 205517 string characters out of 5715801
+ 635891 words of memory out of 5000000
+ 36390 multiletter control sequences out of 15000+600000
  570637 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,12n,93p,702b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
-usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/
-texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/te
-xlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
-ive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texliv
-e/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/
-2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/20
-25/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on SyntheticApertureRadarSimplified.pdf (11 pages, 895838 bytes)
-.
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texli
+ve/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive
+/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2
+025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/202
+5/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/
+texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on SyntheticApertureRadarSimplified.pdf (12 pages, 1092706 bytes
+).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 84 words of extra memory for PDF output out of 10000 (max. 10000000)
 
