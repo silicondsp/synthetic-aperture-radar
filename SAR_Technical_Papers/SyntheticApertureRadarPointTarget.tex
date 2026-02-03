@@ -192,7 +192,7 @@ where $s(t)$ is the transmitted signal, $f_0$ is the carrier frequency of the ra
 
 
 
-Each pulse has a duration of $33.8~\mu  $sec and a chirp rate of 0.5621~MHz$/\mu $sec or a pulse bandwidth $B_r$ of 19 MHz which results in a slant range resolution $\delta r= \frac{c}{2}B_r \sin\theta $ of 25 meters. 
+Each pulse has a duration of $33.8~\mu  $sec and a chirp rate of 0.5621~MHz$/\mu $sec or a pulse bandwidth $B_r$ of 19 MHz which results in a slant range resolution $\delta r= \frac{c}{2B_r \sin\theta}$ of 25 meters. 
 \par
 
 \par
@@ -221,8 +221,8 @@ To get any useful information regarding the position of the target, the down-con
 
 \begin{equation}
 \label{eq:convolution}
-s'(-t)*g'(t) = \Delta t/2 Re \left [  \frac { \sin   [\pi B_r  ( t-\frac{2r(\tau)}{c} )]  } {\pi B_r (  t-\frac{2r(\tau)}{c} )}  \right ]   
-\times e^{-j4 \pi r(\tau)/\lambda } e^{j2 \pi f_1 t } 
+s'(-t)*g'(t) = \frac{\Delta t}{2 }Re \left [  \frac { \sin   [\pi B_r  ( t-\frac{2r(\tau)}{c} )]  } {\pi B_r (  t-\frac{2r(\tau)}{c} )}  
+\times e^{-j4 \pi r(\tau)/\lambda } e^{j2 \pi f_1 t } \right ]   
 \end{equation}
 
 
@@ -246,13 +246,14 @@ Hence, the time domain convolution in the above expression results in the desire
 
 \begin{enumerate}
 \item Take the DFFT ($g'(t)) $ to get $G'(f)$ of length $N$.
-\item Take the DFFT ($s'(t)$) to get $S'(f)$ of length $N$.
+\item Take the DFFT ($s'(t)$) to get $S'(f)$ of length $N$. 
+\item Conjugate to get $S'^*(f)$.
 \item Truncate the spectrums to half of the original lengths.
-\item Range compressed = $FFT^{-1} \left (  G'(f) S'(f) \right )$ of length $\frac{N}{2}$.
-\item $(r_0)$ position of point target $= \max ( | FFT^{-1} \left ( G'(f) S'(f) \right ) | ) $.
+\item Range compressed = $FFT^{-1} \left (  G'(f) S'^*(f) \right )$ of length $\frac{N}{2}$.
+\item $(r_0)$ position of point target $= \max ( | FFT^{-1} \left ( G'(f) S'^*(f) \right ) | ) $.
 \end{enumerate}
 
-At the end of operation 4 we are left with the right hand side of  Equation \ref{eq:convolution}. Step number 3 is necessary since the azimuth compression requires a complex sequence for correlation. This important approach for real to complex conversion using FFTs was described by Fitch in 1988 [3] and it bypasses the need for a Hilbert transform. Basically, the complex sequence has a real part equal to samples of the real signal taken at half the original rate and a spectrum equal to the first half of the original real sequence spectrum. The real to complex conversion is accomplished by using the first half of the spectral coefficients.
+At the end of operation 5 we are left with the right hand side of  Equation \ref{eq:convolution}. Step number 3 is necessary since the azimuth compression requires a complex sequence for correlation. This important approach for real to complex conversion using FFTs was described by Fitch in 1988 [3] and it bypasses the need for a Hilbert transform. Basically, the complex sequence has a real part equal to samples of the real signal taken at half the original rate and a spectrum equal to the first half of the original real sequence spectrum. The real to complex conversion is accomplished by using the first half of the spectral coefficients.
 
 \par
 
@@ -389,9 +390,9 @@ For the azimuth compression an operation similar to the range compression is req
 \begin{equation}
 \label{ }
 \begin{split}
-b(\tau)=g(\tau)* h(\tau) = e^{j2\pi f_{DC}\tau)} 
+b(\tau)=g(\tau)* h(\tau) = e^{j2\pi f_{DC}\tau} 
 \times   e^{-j2\pi (2r_c/\lambda + f_{DC} \tau_c)}     \times \\
-\Delta  \tau \frac{\sin \left ( \pi B_D (\tau -\tau_c) \right ) }{(\pi B_D (\tau -\tau_c)) }~~ | \tau -\tau_c| \leq \Delta \tau /2
+\Delta  \tau \frac{\sin \left [ \pi B_D (\tau -\tau_c) \right ] }{[\pi B_D (\tau -\tau_c)] }~~ | \tau -\tau_c| \leq \Delta \tau /2
 \end{split}
 \end{equation}
 

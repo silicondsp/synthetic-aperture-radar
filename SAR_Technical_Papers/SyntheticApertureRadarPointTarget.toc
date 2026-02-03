@@ -4,23 +4,23 @@
 \contentsline {chapter}{\chapternumberline {1}Introduction}{4}{chapter.1}%
 \contentsline {chapter}{\chapternumberline {2}Point Target Response}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Range Compression}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Azimuth Compression}{11}{section.2.2}%
-\contentsline {chapter}{\chapternumberline {3}SAR Image for Point Targets and Block Diagram Modeling and Simulation}{13}{chapter.3}%
-\contentsline {chapter}{\chapternumberline {4}Auto-Focusing}{16}{chapter.4}%
-\contentsline {chapter}{\chapternumberline {5}SAR Block Diagram Simulation Repository on GitHub}{17}{chapter.5}%
-\contentsline {chapter}{\chapternumberline {6}References}{18}{chapter.6}%
-\contentsline {subsection}{ }{18}{section*.3}%
-\contentsline {subsection}{ }{18}{section*.3}%
-\contentsline {chapter}{\chapternumberline {7}GNU Free Documentation License}{19}{chapter.7}%
-\contentsline {subsection}{0. PREAMBLE}{19}{section*.4}%
-\contentsline {subsection}{1. APPLICABILITY AND DEFINITIONS}{19}{section*.4}%
-\contentsline {subsection}{2. VERBATIM COPYING}{21}{section*.4}%
-\contentsline {subsection}{3. COPYING IN QUANTITY}{21}{section*.4}%
-\contentsline {subsection}{4. MODIFICATIONS}{22}{section*.4}%
-\contentsline {subsection}{5. COMBINING DOCUMENTS}{23}{section*.4}%
-\contentsline {subsection}{6. COLLECTIONS OF DOCUMENTS}{24}{section*.4}%
-\contentsline {subsection}{7. AGGREGATION WITH INDEPENDENT WORKS}{24}{section*.4}%
-\contentsline {subsection}{8. TRANSLATION}{24}{section*.4}%
-\contentsline {subsection}{9. TERMINATION}{25}{section*.4}%
-\contentsline {subsection}{10. FUTURE REVISIONS OF THIS LICENSE}{25}{section*.4}%
-\contentsline {subsection}{11. RELICENSING}{26}{section*.4}%
+\contentsline {section}{\numberline {2.2}Azimuth Compression}{12}{section.2.2}%
+\contentsline {chapter}{\chapternumberline {3}SAR Image for Point Targets and Block Diagram Modeling and Simulation}{14}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {4}Auto-Focusing}{17}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {5}SAR Block Diagram Simulation Repository on GitHub}{18}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {6}References}{19}{chapter.6}%
+\contentsline {subsection}{ }{19}{section*.3}%
+\contentsline {subsection}{ }{19}{section*.3}%
+\contentsline {chapter}{\chapternumberline {7}GNU Free Documentation License}{20}{chapter.7}%
+\contentsline {subsection}{0. PREAMBLE}{20}{section*.4}%
+\contentsline {subsection}{1. APPLICABILITY AND DEFINITIONS}{20}{section*.4}%
+\contentsline {subsection}{2. VERBATIM COPYING}{22}{section*.4}%
+\contentsline {subsection}{3. COPYING IN QUANTITY}{22}{section*.4}%
+\contentsline {subsection}{4. MODIFICATIONS}{23}{section*.4}%
+\contentsline {subsection}{5. COMBINING DOCUMENTS}{24}{section*.4}%
+\contentsline {subsection}{6. COLLECTIONS OF DOCUMENTS}{25}{section*.4}%
+\contentsline {subsection}{7. AGGREGATION WITH INDEPENDENT WORKS}{25}{section*.4}%
+\contentsline {subsection}{8. TRANSLATION}{25}{section*.4}%
+\contentsline {subsection}{9. TERMINATION}{26}{section*.4}%
+\contentsline {subsection}{10. FUTURE REVISIONS OF THIS LICENSE}{26}{section*.4}%
+\contentsline {subsection}{11. RELICENSING}{27}{section*.4}%

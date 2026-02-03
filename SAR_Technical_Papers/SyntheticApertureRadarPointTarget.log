@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  27 JAN 2026 23:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 FEB 2026 21:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -746,135 +746,135 @@ LaTeX Warning: No positions in optional float specifier.
 File: SAR_Image_Formation/FFT_FM_Chirp_SAR.png Graphic file (type png)
 <use SAR_Image_Formation/FFT_FM_Chirp_SAR.png>
 Package pdftex.def Info: SAR_Image_Formation/FFT_FM_Chirp_SAR.png  used on inpu
-t line 301.
+t line 302.
 (pdftex.def)             Requested size: 265.64938pt x 227.62204pt.
 
 
 [8]
-<SAR_Image_Formation/range_compression_plot.png, id=251, 1340.00626pt x 906.386
+<SAR_Image_Formation/range_compression_plot.png, id=252, 1340.00626pt x 906.386
 25pt>
 File: SAR_Image_Formation/range_compression_plot.png Graphic file (type png)
 <use SAR_Image_Formation/range_compression_plot.png>
 Package pdftex.def Info: SAR_Image_Formation/range_compression_plot.png  used o
-n input line 308.
+n input line 309.
 (pdftex.def)             Requested size: 336.51381pt x 227.62204pt.
-<SAR_Image_Formation/chirp_pulse_compression.pdf, id=252, 614.21272pt x 794.97p
+
+
+[9 <./SAR_Image_Formation/FFT_FM_Chirp_SAR.png>]
+<SAR_Image_Formation/chirp_pulse_compression.pdf, id=258, 614.21272pt x 794.97p
 t>
 File: SAR_Image_Formation/chirp_pulse_compression.pdf Graphic file (type pdf)
 <use SAR_Image_Formation/chirp_pulse_compression.pdf>
 Package pdftex.def Info: SAR_Image_Formation/chirp_pulse_compression.pdf  used 
-on input line 316.
+on input line 317.
 (pdftex.def)             Requested size: 175.86781pt x 227.62204pt.
-
-
-[9 <./SAR_Image_Formation/FFT_FM_Chirp_SAR.png> <./SAR_Image_Formation/range_co
-mpression_plot.png>]
 <SAR_Image_Formation/range_compression_plot_zoomed_bar_chart.png, id=259, 1340.
 00626pt x 906.38625pt>
 File: SAR_Image_Formation/range_compression_plot_zoomed_bar_chart.png Graphic f
 ile (type png)
 <use SAR_Image_Formation/range_compression_plot_zoomed_bar_chart.png>
 Package pdftex.def Info: SAR_Image_Formation/range_compression_plot_zoomed_bar_
-chart.png  used on input line 323.
+chart.png  used on input line 324.
 (pdftex.def)             Requested size: 336.51381pt x 227.62204pt.
-<./SAR_Record_Radar_Returns.png, id=261, 1014.03844pt x 697.8572pt>
+
+
+[10 <./SAR_Image_Formation/range_compression_plot.png> <./SAR_Image_Formation/c
+hirp_pulse_compression.pdf>]
+<./SAR_Record_Radar_Returns.png, id=284, 1014.03844pt x 697.8572pt>
 File: ./SAR_Record_Radar_Returns.png Graphic file (type png)
 <use ./SAR_Record_Radar_Returns.png>
-Package pdftex.def Info: ./SAR_Record_Radar_Returns.png  used on input line 332
+Package pdftex.def Info: ./SAR_Record_Radar_Returns.png  used on input line 333
 .
 (pdftex.def)             Requested size: 289.07999pt x 198.94461pt.
 
 
-[10 <./SAR_Image_Formation/chirp_pulse_compression.pdf> <./SAR_Image_Formation/
-range_compression_plot_zoomed_bar_chart.png>]
+[11 <./SAR_Image_Formation/range_compression_plot_zoomed_bar_chart.png> <./SAR_
+Record_Radar_Returns.png>]
 
-[11 <./SAR_Record_Radar_Returns.png>]
-<SAR_Image_Formation/SAR_Azimuth_Reference.png, id=297, 1587.9325pt x 788.9475p
+[12]
+<SAR_Image_Formation/SAR_Azimuth_Reference.png, id=304, 1587.9325pt x 788.9475p
 t>
 File: SAR_Image_Formation/SAR_Azimuth_Reference.png Graphic file (type png)
 <use SAR_Image_Formation/SAR_Azimuth_Reference.png>
 Package pdftex.def Info: SAR_Image_Formation/SAR_Azimuth_Reference.png  used on
- input line 417.
+ input line 418.
 (pdftex.def)             Requested size: 458.13834pt x 227.62204pt.
 
-Overfull \hbox (117.13834pt too wide) in paragraph at lines 417--418
+Overfull \hbox (117.13834pt too wide) in paragraph at lines 418--419
  [][] 
  []
 
 
 
-[12]
-<./SAR_Block_Diagram_Capsim.png, id=310, 1294.8375pt x 441.90094pt>
+[13 <./SAR_Image_Formation/SAR_Azimuth_Reference.png>]
+<./SAR_Block_Diagram_Capsim.png, id=317, 1294.8375pt x 441.90094pt>
 File: ./SAR_Block_Diagram_Capsim.png Graphic file (type png)
 <use ./SAR_Block_Diagram_Capsim.png>
-Package pdftex.def Info: ./SAR_Block_Diagram_Capsim.png  used on input line 436
+Package pdftex.def Info: ./SAR_Block_Diagram_Capsim.png  used on input line 437
 .
 (pdftex.def)             Requested size: 289.07999pt x 98.65472pt.
-
-
-[13 <./SAR_Image_Formation/SAR_Azimuth_Reference.png>]
-<SAR_Image_Formation/SAR_Image_Point_Target_grs.jpg, id=317, 3055.415pt x 3302.
+<SAR_Image_Formation/SAR_Image_Point_Target_grs.jpg, id=318, 3055.415pt x 3302.
 3375pt>
 File: SAR_Image_Formation/SAR_Image_Point_Target_grs.jpg Graphic file (type jpg
 )
 <use SAR_Image_Formation/SAR_Image_Point_Target_grs.jpg>
 Package pdftex.def Info: SAR_Image_Formation/SAR_Image_Point_Target_grs.jpg  us
-ed on input line 446.
+ed on input line 447.
 (pdftex.def)             Requested size: 263.22679pt x 284.52756pt.
-<SAR_Image_Formation/sar_image_formation_840p8_400.jpg, id=320, 1027.84pt x 102
+
+
+[14 <./SAR_Block_Diagram_Capsim.png>]
+<SAR_Image_Formation/sar_image_formation_840p8_400.jpg, id=326, 1027.84pt x 102
 7.84pt>
 File: SAR_Image_Formation/sar_image_formation_840p8_400.jpg Graphic file (type 
 jpg)
 <use SAR_Image_Formation/sar_image_formation_840p8_400.jpg>
 Package pdftex.def Info: SAR_Image_Formation/sar_image_formation_840p8_400.jpg 
- used on input line 459.
+ used on input line 460.
 (pdftex.def)             Requested size: 284.53105pt x 284.52756pt.
 
 
-[14 <./SAR_Block_Diagram_Capsim.png> <./SAR_Image_Formation/SAR_Image_Point_Tar
-get_grs.jpg>]
-<SAR_Image_Formation/sar_image_formation_842p5_700.jpg, id=326, 1027.84pt x 102
+[15 <./SAR_Image_Formation/SAR_Image_Point_Target_grs.jpg>]
+<SAR_Image_Formation/sar_image_formation_842p5_700.jpg, id=331, 1027.84pt x 102
 7.84pt>
 File: SAR_Image_Formation/sar_image_formation_842p5_700.jpg Graphic file (type 
 jpg)
 <use SAR_Image_Formation/sar_image_formation_842p5_700.jpg>
 Package pdftex.def Info: SAR_Image_Formation/sar_image_formation_842p5_700.jpg 
- used on input line 469.
+ used on input line 470.
 (pdftex.def)             Requested size: 284.53105pt x 284.52756pt.
 
 
-[15 <./SAR_Image_Formation/sar_image_formation_840p8_400.jpg>]
+[16 <./SAR_Image_Formation/sar_image_formation_840p8_400.jpg>]
 
-[16 <./SAR_Image_Formation/sar_image_formation_842p5_700.jpg>]
-
-[17]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 500.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 500.
-
-
+[17 <./SAR_Image_Formation/sar_image_formation_842p5_700.jpg>]
 
 [18]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 518.
+(hyperref)                than one, level fixed on input line 501.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 518.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--524
-
- []
+(hyperref)                be the same. Added a new anchor on input line 501.
 
 
 
 [19]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 519.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 519.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--525
+
+ []
+
+
 
 [20]
 
@@ -889,6 +889,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 521--524
 [25]
 
 [26]
+
+[27]
 \tf@toc=\write5
 \openout5 = `SyntheticApertureRadarPointTarget.toc'.
 
@@ -909,9 +911,9 @@ ot changed.
 (rerunfilecheck)             Checksum: 33B667CC784C8A9C28F4EABBC81C73B7;4067.
  ) 
 Here is how much of TeX's memory you used:
- 13749 strings out of 473190
- 212467 string characters out of 5715801
- 647008 words of memory out of 5000000
+ 13751 strings out of 473190
+ 212481 string characters out of 5715801
+ 648008 words of memory out of 5000000
  36762 multiletter control sequences out of 15000+600000
  573669 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -935,11 +937,11 @@ xmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2025/texm
 f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-
 dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-di
 st/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on SyntheticApertureRadarPointTarget.pdf (26 pages, 5646132 byte
+Output written on SyntheticApertureRadarPointTarget.pdf (27 pages, 5646938 byte
 s).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 386 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
+ 79 named destinations out of 1000 (max. 500000)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
