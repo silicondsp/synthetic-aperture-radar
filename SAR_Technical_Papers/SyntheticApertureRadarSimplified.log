@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  29 JAN 2026 04:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  3 FEB 2026 23:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -798,11 +798,11 @@ File: ./sar_geometry_azimuth.jpg Graphic file (type jpg)
 <use ./sar_geometry_azimuth.jpg>
 Package pdftex.def Info: ./sar_geometry_azimuth.jpg  used on input line 288.
 (pdftex.def)             Requested size: 289.07999pt x 234.03136pt.
-<./azimuth_plane3.jpg, id=111, 795.97375pt x 835.12pt>
-File: ./azimuth_plane3.jpg Graphic file (type jpg)
-<use ./azimuth_plane3.jpg>
-Package pdftex.def Info: ./azimuth_plane3.jpg  used on input line 295.
-(pdftex.def)             Requested size: 289.07999pt x 303.29349pt.
+<./azimuth_resolution.jpg, id=111, 1656.1875pt x 1778.645pt>
+File: ./azimuth_resolution.jpg Graphic file (type jpg)
+<use ./azimuth_resolution.jpg>
+Package pdftex.def Info: ./azimuth_resolution.jpg  used on input line 295.
+(pdftex.def)             Requested size: 289.07999pt x 310.45334pt.
 <./SAR_Record_Radar_Returns.png, id=112, 1014.03844pt x 697.8572pt>
 File: ./SAR_Record_Radar_Returns.png Graphic file (type png)
 <use ./SAR_Record_Radar_Returns.png>
@@ -823,7 +823,7 @@ Package pdftex.def Info: ./SAR_Record_Radar_Returns.png  used on input line 302
 
 [10 <./sar_geometry_azimuth.jpg>]
 
-[11 <./azimuth_plane3.jpg>]
+[11 <./azimuth_resolution.jpg>]
 
 [12 <./SAR_Record_Radar_Returns.png>]
 \tf@toc=\write5
@@ -847,7 +847,7 @@ t changed.
  ) 
 Here is how much of TeX's memory you used:
  13340 strings out of 473190
- 205517 string characters out of 5715801
+ 205545 string characters out of 5715801
  635891 words of memory out of 5000000
  36390 multiletter control sequences out of 15000+600000
  570637 words of font info for 64 fonts, out of 8000000 for 9000
@@ -869,7 +869,7 @@ ve/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive
 5/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/
 texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/te
 xmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on SyntheticApertureRadarSimplified.pdf (12 pages, 1092529 bytes
+Output written on SyntheticApertureRadarSimplified.pdf (12 pages, 1154492 bytes
 ).
 PDF statistics:
  277 PDF objects out of 1000 (max. 8388607)
